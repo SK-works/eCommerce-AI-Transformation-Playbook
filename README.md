@@ -1,17 +1,66 @@
-# ecommerce-ai-transformation-playbook
-A complete AI-powered operations system for eCommerce content teams.
-Built as a learning and demonstration project.
+# eCommerce AI Transformation Playbook
 
-## Components
-- [ ] Week 1 — AI Ecosystem Analysis
-- [ ] Week 2 — eCommerce Prompt Library
-- [ ] Week 3 — AI Knowledge Assistant (RAG)
-- [ ] Week 4 — Product Brief Automation Workflow
-- [ ] Week 5 — Competitor Intelligence Agent
-- [ ] Week 6 — AI Governance Framework
+A complete AI transformation programme for eCommerce content operations — 
+covering strategic assessment, use case prioritisation, knowledge architecture, 
+workflow automation, agentic AI strategy, and governance framework. Each 
+strategic deliverable is accompanied by a deployed proof of concept.
 
-## Live Demos
-*(links will be added as each component is built)*
+Built to demonstrate end-to-end transformation leadership capability, from 
+board-level investment rationale to working production systems.
 
-## Architecture
-*(diagram coming in Week 6)*
+---
+
+## Component 1 — AI Landscape & Opportunity Assessment
+
+**Status:** Complete
+
+**What this is:** A structured capability assessment of the six major AI 
+platforms tested against real eCommerce content operations tasks. Designed 
+to answer the operational question every transformation lead must answer 
+before recommending any AI platform: which tools can actually be trusted 
+in a production content workflow?
+
+**What was tested:** Five platforms (Claude, ChatGPT, Gemini, Copilot, 
+Perplexity) across three eCommerce content tasks (product description 
+generation, competitor gap analysis, product data extraction and 
+categorisation). Identical inputs, structured scoring framework, 
+60-point maximum.
+
+**Key finding:** Claude achieved the only perfect score (60/60), 
+distinguished by format reliability, web-sourced market intelligence depth, 
+and expert-level eCommerce data architecture understanding. ChatGPT is a 
+strong second choice (57/60) for structured data tasks. Gemini, Copilot, 
+and Perplexity each carry specific workflow risks that make them unsuitable 
+for production pipeline integration without significant additional controls.
+
+**Strategic implication:** Platform selection for eCommerce content AI 
+should prioritise format reliability and domain accuracy over general 
+capability benchmarks. A model that produces brilliant content in the 
+wrong format, or accurate structure with category errors, creates more 
+operational overhead than it removes.
+
+[Read the full assessment →] https://app.notion.com/p/AI-Platform-Comparison-Test-eCommerce-Content-Operations-38d1a1c9f954809aa03fdfe14ae2209b?source=copy_link
+
+---
+
+## Components In Progress
+
+- Component 2 — AI Use Case Prioritisation Framework
+- Component 3 — AI Knowledge Architecture & Assistant
+- Component 4 — Workflow Automation Business Case & Implementation
+- Component 5 — AI Agent Strategy & Design
+- Component 6 — AI Governance Framework & Transformation Roadmap
+
+---
+
+## About This Project
+
+Role context: AI Transformation & Strategic Projects Lead — 
+eCommerce Content Operations
+
+Project goal: Demonstrate end-to-end AI transformation leadership 
+capability — the ability to assess, prioritise, design, build, govern, 
+and communicate AI initiatives in a real eCommerce operations context.
+
+All tools used are free tier. All proof of concepts are deployed and 
+accessible.
