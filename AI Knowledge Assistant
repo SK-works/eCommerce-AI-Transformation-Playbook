@@ -1,1 +1,146 @@
+WEEK 3 — AI KNOWLEDGE ASSISTANT (RAG CHATBOT)
+eCommerce AI Transformation Playbook | Build Journal
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LIVE DEMO
+https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/06/29/10/20260629101945-GGRHALLO.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT I BUILT
+
+A live RAG (Retrieval-Augmented Generation) chatbot that answers eCommerce content operations questions grounded in a 6-document knowledge base. Anyone can open the link and get accurate, standards-based answers on product descriptions, taxonomy, image compliance, content quality, terminology, and attribute extraction.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THE PROBLEM IT SOLVES
+
+eCommerce content teams waste significant time answering the same questions repeatedly:
+- How long should a product description be?
+- Where do I classify this product?
+- What images are required for this category?
+- What does this term mean?
+
+Without a knowledge system, answers are inconsistent and dependent on senior team members. This slows onboarding, creates quality variability, and burns time that should go toward higher-value work.
+
+The AI Assistant makes the knowledge instantly accessible to anyone, anytime.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TOOLS USED
+
+Platform: Botpress (browser-based, no installation required)
+RAG engine: Botpress built-in knowledge base with semantic search
+LLM: GPT-4o (via Botpress)
+Knowledge base: 6 custom plain text documents
+Deployment: Cloud-hosted, shareable public link
+Cost: Free tier
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THE KNOWLEDGE BASE (6 DOCUMENTS)
+
+01 — Product Description Style Guide
+Structure, tone, word counts by channel, common errors, quality checklist
+
+02 — Product Taxonomy Guide
+10 top-level categories with definitions, subcategories, classification rules for edge cases
+
+03 — Image Compliance Checklist
+Technical specs, content standards, category-specific rules, image sequence standard
+
+04 — Content Quality Checklist
+5 quality dimensions (completeness, accuracy, clarity, consistency, searchability), title formula, bullet point standards, quality tiers
+
+05 — eCommerce Glossary
+25+ terms: A+ content, attribution, dark listing, ghost mannequin, PDP, quick commerce, retail readiness, SKU, taxonomy, and more
+
+06 — Attribute Extraction Guide
+Mandatory attributes by category (Electronics, Food, Fashion, Beauty, Home), extraction process, common errors
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HOW IT WAS BUILT
+
+Step 1: Created 6 knowledge base documents covering eCommerce content standards
+Step 2: Created a Botpress account and new bot
+Step 3: Uploaded all 6 documents to the Botpress knowledge base
+Step 4: Configured system prompt to constrain the bot to eCommerce content topics and instruct it to ground answers in the knowledge base
+Step 5: Tested with 3 questions — all answered accurately from knowledge base content
+Step 6: Published and generated shareable link
+
+Total build time: approximately 2 hours
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TEST RESULTS
+
+Question 1: "What makes a good product description?"
+Result: Returned 4-component structure, tone guidelines, word count standards, quality checklist — all from Document 01. Accurate. ✓
+
+Question 2: "Where should I classify an electric hand blender?"
+Result: Correctly identified Home and Kitchen → Kitchen Appliances, applied primary use classification rule from Document 02. Accurate. ✓
+
+Question 3: "What images are required for a fashion listing?"
+Result: Returned full image sequence, hero image specs, on-model requirement, variant image rules, compliance checklist from Document 03. Accurate. ✓
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUSINESS IMPACT ESTIMATE
+
+Time to answer content standards question:
+Before: 5–15 minutes (find document, search, read)
+After: Under 30 seconds
+
+Answer consistency across team:
+Before: Variable — depends on who you ask
+After: Consistent — single source of truth
+
+Availability:
+Before: Business hours, depends on senior team member
+After: 24/7, self-serve
+
+New joiner onboarding time for content standards:
+Before: 2–3 days to absorb documentation
+After: Same-day self-serve access via chatbot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT I LEARNED
+
+1. Knowledge base quality determines answer quality. The bot cannot invent precision that is not in the source documents. Clear structure, explicit rules, and worked examples in the documents produced specific, actionable answers.
+
+2. System prompts matter. Constraining the bot to eCommerce content topics only and instructing it to reference the knowledge base — rather than answer from general training data — significantly improved accuracy and relevance.
+
+3. Browser-based RAG tools are now good enough for proof-of-concept deployment. Botpress delivered a production-quality experience without infrastructure setup, vector database configuration, or embedding model decisions.
+
+4. What enterprise-scale would look like differently: dedicated vector database (Supabase with pgvector or Pinecone), custom embedding model, retrieval pipeline tuning, integration with internal knowledge systems (Confluence, SharePoint, Google Drive), access controls, and a formal knowledge governance process.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CHALLENGES FACED
+
+- Flowise on Render.com exceeded the 512MB free tier memory limit during startup — build succeeded but deployment failed
+- Stack AI free tier had access restrictions
+- Resolved by switching to Botpress — fully browser-based, no infrastructure required, free tier sufficient for portfolio purposes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SUGGESTED TEST QUESTIONS FOR PORTFOLIO DEMOS
+
+- "What is the word count for a standard product description?"
+- "What attributes are mandatory for instant coffee listings?"
+- "What is a ghost mannequin?"
+- "What is the difference between a SKU and a variant?"
+- "What makes a listing retail ready?"
+- "Where do I classify a children's tablet?"
+- "What is A+ content?"
+- "What is the image sequence standard for a product listing?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STATUS: COMPLETE ✓
+Live link: Active
+Knowledge base: 6 documents uploaded and processed
+GitHub: week3-knowledge-assistant.md + /knowledge-base folder
