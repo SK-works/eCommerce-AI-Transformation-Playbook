@@ -1,4 +1,4 @@
-# Week 3 — AI Knowledge Assistant (RAG Chatbot)
+# AI Knowledge Assistant (RAG Chatbot)
 ## A Deployed RAG Chatbot for eCommerce Content Operations
 
 **Project:** eCommerce AI Transformation Playbook  
