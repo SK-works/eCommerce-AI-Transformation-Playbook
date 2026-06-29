@@ -1,1 +1,12 @@
+Component 1 — AI Landscape & Opportunity Assessment
+Status: Complete
 
+What this is: A structured capability assessment of the six major AI platforms tested against real eCommerce content operations tasks. Designed to answer the operational question every transformation lead must answer before recommending any AI platform: which tools can actually be trusted in a production content workflow?
+
+What was tested: Five platforms (Claude, ChatGPT, Gemini, Copilot, Perplexity) across three eCommerce content tasks (product description generation, competitor gap analysis, product data extraction and categorisation). Identical inputs, structured scoring framework, 60-point maximum.
+
+Key finding: Claude achieved the only perfect score (60/60), distinguished by format reliability, web-sourced market intelligence depth, and expert-level eCommerce data architecture understanding. ChatGPT is a strong second choice (57/60) for structured data tasks. Gemini, Copilot, and Perplexity each carry specific workflow risks that make them unsuitable for production pipeline integration without significant additional controls.
+
+Strategic implication: Platform selection for eCommerce content AI should prioritise format reliability and domain accuracy over general capability benchmarks. A model that produces brilliant content in the wrong format, or accurate structure with category errors, creates more operational overhead than it removes.
+
+[Read the full assessment →] https://app.notion.com/p/AI-Platform-Comparison-Test-eCommerce-Content-Operations-38d1a1c9f954809aa03fdfe14ae2209b?source=copy_link
