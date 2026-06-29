@@ -2,7 +2,7 @@
 ## A Deployed RAG Chatbot for eCommerce Content Operations
 
 **Project:** eCommerce AI Transformation Playbook  
-**Author:** Sravanthi | Lead Specialist, AI Transformation & Strategic Projects  
+**Author:** Sravanthi Konduru | Lead Specialist, AI Transformation & Strategic Projects  
 **Date:** June 2026  
 **Live Demo:** [Open the eCommerce AI Assistant](https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/06/29/10/20260629101945-GGRHALLO.json)
 
@@ -142,4 +142,4 @@ week3-knowledge-assistant/
 
 [← Week 2 — eCommerce Prompt Library](../week2-prompt-library/README.md) | [Week 4 — Product Brief Automation Workflow →](../week4-automation-workflow/README.md)
 
-*Built as part of the eCommerce AI Transformation Playbook — a 6-week hands-on AI learning and deployment project.*
+*Built as part of the eCommerce AI Transformation Playbook.*
