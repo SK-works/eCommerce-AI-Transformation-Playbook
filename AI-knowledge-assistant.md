@@ -140,6 +140,4 @@ week3-knowledge-assistant/
 
 ---
 
-[← Week 2 — eCommerce Prompt Library](../week2-prompt-library/README.md) | [Week 4 — Product Brief Automation Workflow →](../week4-automation-workflow/README.md)
-
 *Built as part of the eCommerce AI Transformation Playbook.*
