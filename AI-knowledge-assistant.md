@@ -70,7 +70,7 @@ Six documents covering the core knowledge an eCommerce content team needs:
 | 05 | eCommerce Glossary | 25+ terms from A+ content to waterfall content strategy |
 | 06 | Attribute Extraction Guide | Mandatory attributes by category, extraction process, common errors |
 
-All knowledge base documents are in the `/knowledge-base` folder of this repository.
+All knowledge base documents are in the `/RagChatbot Knowlege files` folder of this repository.
 
 ---
 
