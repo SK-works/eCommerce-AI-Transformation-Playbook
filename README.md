@@ -28,7 +28,6 @@ A structured capability assessment of five major AI platforms tested against rea
 ---
 
 ### Component 2 — AI Use Case Prioritisation Framework
-**Status:** 🔄 In Progress
 
 ---
 
@@ -55,7 +54,31 @@ Suggested questions to try:
 ---
 
 ### Component 4 — Workflow Automation Business Case & Implementation
-**Status:** 🔄 In Progress
+## Component 4 — Process Automation Workflow
+
+**Status:** Complete
+
+**What this is:** A working automation workflow that takes a product 
+name and specifications as input and generates a complete, structured 
+product brief automatically — title, description, bullet points, 
+category, and search keywords — in under 2 seconds.
+
+**Tested across:** 6 product categories including consumer electronics, 
+kitchen appliances, fitness technology, food and beverage, and home 
+cleaning. 100% success rate across all test products.
+
+**Key performance finding:** AI generation takes 1.2 seconds per SKU 
+versus 25-35 minutes manual. With a mandatory human review step of 
+2-3 minutes, total time per SKU drops from 30 minutes to 2.5 minutes — 
+an 8-10x throughput improvement per operator.
+
+**Tools:** Google Colab, Groq API (Llama 3.3 70B), Python
+
+**Human oversight:** Every brief requires operator review before 
+publishing. The workflow automates the drafting step only — human 
+judgment on quality, accuracy, and brand alignment is retained.
+
+[Read the full documentation →] https://app.notion.com/p/eCommerce-Product-Brief-Process-Automation-Workflow-3921a1c9f95480e1bed4e5fb838d881e?source=copy_link
 
 ---
 
