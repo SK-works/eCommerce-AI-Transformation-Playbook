@@ -115,17 +115,34 @@ and strategic appropriateness before delivery.
 
 ---
 
-### Component 6 — AI Governance Framework & Transformation Roadmap
-**Status:** 🔄 In Progress
+### Component 6 — AI Governance Framework
+**Status:** Complete
 
----
+**What this is:** A complete, practical AI governance framework 
+for eCommerce content operations — covering AI system registry, 
+risk tier classification, responsible AI principles, data 
+classification, incident response, and a 25-point pre-deployment 
+checklist.
 
-## Live Demos
+**Why it matters:** Every AI system in this portfolio is governed 
+by this framework. The human review steps, output logging, and 
+confidence thresholds built into Components 3, 4, and 5 all 
+directly implement the principles and controls defined here.
 
-| Component | Demo |
-|---|---|
-| Component 1 — AI Landscape Assessment | [Notion Report](https://app.notion.com/p/AI-Platform-Comparison-Test-eCommerce-Content-Operations-38d1a1c9f954809aa03fdfe14ae2209b?source=copy_link) |
-| Component 3 — AI Knowledge Assistant | [Live Chatbot](https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/06/29/10/20260629101945-GGRHALLO.json) |
+**Grounded in:** EU AI Act, NIST AI Risk Management Framework, 
+GDPR obligations for B2B eCommerce operations.
+
+**Key sections:**
+- AI System Registry — master inventory of all deployed systems
+- Risk Tier Classification — Low / Medium / High with specific 
+  eCommerce examples
+- 5 Responsible AI Principles with eCommerce-specific 
+  failure mode examples
+- Data Classification — 4 tiers from Public to Restricted
+- Incident Response — 5-step procedure with time targets
+- Pre-Deployment Checklist — 25 checks across 5 categories
+
+[Read the full framework →] https://app.notion.com/p/AI-Governance-Framework-eCommerce-AI-Deployment-3941a1c9f95480aebab5d8beb4b6c6b3?source=copy_link
 
 ---
 
