@@ -641,8 +641,3 @@ Situation: 3,000 SKUs/month processed manually at 25-30 mins each. Competitor al
 
 All prompts tested on Claude (primary) and cross-validated on ChatGPT and Groq (Llama 3.3-70b).
 
----
-
-[← Component 1 — AI Landscape Assessment](../component1-ecosystem-analysis/README.md) | [Component 3 — AI Knowledge Assistant →](../week3-knowledge-assistant/README.md)
-
-*Built as part of the eCommerce AI Transformation Playbook — a 6-week hands-on AI learning and deployment project.*
