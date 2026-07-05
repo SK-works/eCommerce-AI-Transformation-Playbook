@@ -41,7 +41,7 @@ A structured capability assessment of five major AI platforms tested against rea
 **Tools:** Claude (primary testing), ChatGPT, Groq API (Llama 3.3 70B)
 
 [Read the full prompt library →] (https://github.com/SK-works/eCommerce-AI-Transformation-Playbook/blob/main/eCommerce_Prompt_Library)
-
+[Read the full assessment →] https://app.notion.com/p/eCommerce-Prompt-Library-25-Production-Grade-Prompts-for-eCommerce-Content-Operations-38e1a1c9f95480d5b3f3c17955776790?source=copy_link
 ---
 
 ### Component 3 — AI Knowledge Assistant (RAG Chatbot)
