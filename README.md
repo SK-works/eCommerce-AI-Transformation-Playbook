@@ -40,7 +40,7 @@ A structured capability assessment of five major AI platforms tested against rea
 
 **Tools:** Claude (primary testing), ChatGPT, Groq API (Llama 3.3 70B)
 
-[Read the full prompt library →] (https://github.com/your-username/ecommerce-ai-transformation-playbook/blob/main/component2-prompt-library/README.md)](https://github.com/SK-works/eCommerce-AI-Transformation-Playbook/blob/main/eCommerce_Prompt_Library)
+[Read the full prompt library →] (https://github.com/SK-works/eCommerce-AI-Transformation-Playbook/blob/main/eCommerce_Prompt_Library)
 
 ---
 
