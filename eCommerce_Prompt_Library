@@ -1,0 +1,648 @@
+*eCommerce Prompt Library
+
+**Project:** eCommerce AI Transformation Playbook  
+**Author:** Sravanthi | Lead Specialist, AI Transformation & Strategic Projects  
+**Date:** 05/07/2026
+
+---
+
+## What This Is
+
+A library of 25 production-tested prompts across 5 eCommerce content operations categories. Every prompt includes a system role, structured instructions, and a real tested output. Built to demonstrate how prompt engineering produces consistent, structured, actionable AI outputs for eCommerce teams.
+
+---
+
+## Why It Matters
+
+Most eCommerce teams use AI reactively — open a chat window, type a question, get a generic answer. This library demonstrates a different approach: structured prompts with defined roles, clear output formats, and explicit constraints that produce outputs a content team can actually use without heavy editing.
+
+The difference between a generic prompt and an engineered prompt is the difference between a first draft that needs rewriting and a first draft that needs only light review.
+
+---
+
+## The 25 Prompts
+
+### CATEGORY 1 — PRODUCT CONTENT (5 Prompts)
+
+---
+
+**Prompt 01 — Product Description Generator**
+
+**Technique:** Role-based + structured constraints + negative rules  
+**Use case:** Generate a 150-word benefit-led product description from a spec sheet
+
+**System prompt:**
+> You are an expert eCommerce copywriter specialising in retail marketplace content. You write product descriptions that are accurate, benefit-led, and optimised for both human readers and search engines. You never invent specifications not present in the source data.
+
+**User prompt:**
+> Write a 150-word product description for the following product.
+> Requirements:
+> - Open with the single strongest consumer benefit
+> - Weave all specifications in naturally — do not list them
+> - Professional retail tone, present tense
+> - End with one clear call to action
+> - No bullet points, flowing paragraphs only
+> - Do not use the words "premium", "perfect" or "ultimate"
+> 
+> Product data: [paste product name, category, specs, target customer]
+
+**Tested output (ThermoBreeze Pro portable fan):**
+Stay focused and comfortable wherever you work with the ThermoBreeze Pro, a portable fan that delivers a powerful breeze to keep you cool and refreshed. With its 3 speed settings, you can tailor the airflow to suit your needs, from a gentle whisper to a stronger gust. Powered by USB-C, this fan is not only convenient but also whisper-quiet, operating at just 25dB, making it ideal for home offices or shared workspaces. Its 270-degree rotation and foldable stand allow for flexible placement, while its lightweight 340g design makes it easy to take on the go. Available in white and slate grey, the ThermoBreeze Pro provides up to 8 hours of cooling relief on a single charge. Upgrade your workspace with a breath of fresh air — buy your ThermoBreeze Pro today.
+
+**Technique used:** Role-based prompting with explicit negative constraints ("do not use the words...") produces cleaner, more differentiated copy than positive instructions alone.
+
+---
+
+**Prompt 02 — Feature Bullet Point Generator**
+
+**Technique:** Role-based + format specification + benefit-first rule  
+**Use case:** Generate 6 scannable, benefit-led bullet points from product specs
+
+**System prompt:**
+> You are a product content specialist for a major eCommerce platform. You write feature bullet points that are scannable, benefit-focused, and accurate. Each bullet leads with the benefit, not the feature.
+
+**User prompt:**
+> Generate 6 product feature bullet points for the product below.
+> Rules:
+> - Each bullet must start with the BENEFIT then explain the feature that delivers it
+> - Maximum 20 words per bullet
+> - No repetition across bullets
+> - No bullet should begin with the product name or brand
+> - Format: start each line with a → symbol
+> 
+> Product: [paste product name and specs]
+
+**Tested output (ArcLight Desk Lamp):**
+→ Enhance visibility with LED lighting
+→ Enjoy customized illumination with 5 colour temps
+→ Control lighting with touch dimmer
+→ Charge devices with convenient USB-A port
+→ Save energy with automatic 30-minute timer
+→ Position precisely with 180-degree flexible arm
+
+---
+
+**Prompt 03 — SEO Product Title Generator**
+
+**Technique:** Role-based + character limit constraint + rationale request  
+**Use case:** Generate 3 optimised product title options with strategic reasoning
+
+**System prompt:**
+> You are an eCommerce SEO specialist who writes product titles for major retail marketplaces. You understand search intent, keyword placement, and character limits.
+
+**User prompt:**
+> Generate 3 optimised product title options for the product below.
+> Requirements:
+> - Each title maximum 80 characters including spaces
+> - Must include: brand name, product type, and strongest differentiating attribute
+> - Place highest-volume search term as early as possible
+> - No promotional language — no "best", "amazing", "deal"
+> - After each title write one sentence explaining your choices
+> 
+> Product: [paste brand, product, key features, primary market]
+
+**Tested output (NordCase Laptop Backpack):**
+1. NordCase Laptop Backpack TSA Lock — prioritises high-volume search term and includes key differentiating TSA lock feature
+2. Laptop Backpack NordCase 17-inch TSA — places highest-volume keyword first, followed by brand and size differentiator
+3. NordCase TSA Laptop Backpack 42L — highlights TSA approval and large capacity for business travellers
+
+---
+
+**Prompt 04 — Variant Description Writer**
+
+**Technique:** Role-based + word count constraint + lifestyle anchoring instruction  
+**Use case:** Write individual short descriptions for each colour variant
+
+**System prompt:**
+> You are an eCommerce content writer. You write short variant descriptions for product colour options on retail platforms. These are 30-40 words maximum and highlight what is unique about that specific variant.
+
+**User prompt:**
+> Write individual short variant descriptions for each colour option below. Each description should be 30-40 words, mention the colour naturally, and add one specific lifestyle or use-case context relevant to that colour choice.
+> 
+> Product: [product name]
+> Variants: [list colour options]
+> Format: colour name as heading, description below it.
+
+**Tested output (CloudStep Running Shoes — 5 variants):**
+Midnight Black — Run under the night sky with Midnight Black CloudStep shoes, ideal for evening city jogs where a sleek, low-key look supports a distraction-free workout.
+Arctic White — Make a statement on snowy trails with Arctic White CloudStep shoes, designed to stand out against winter landscapes for cold-weather runners who tackle frosty mornings.
+
+---
+
+**Prompt 05 — Market Localisation Adaptation Brief**
+
+**Technique:** Role-based + structured multi-market output + cultural context instruction  
+**Use case:** Adapt a UK product description for USA, Germany, and Japan markets
+
+**System prompt:**
+> You are a senior eCommerce localisation specialist. You adapt product descriptions for different markets ensuring cultural relevance and appropriate tone — not just translation.
+
+**User prompt:**
+> The product description below is written for the UK market. Create adaptation briefs for 3 international markets.
+> For each market provide:
+> - Key tone adjustment needed (2 sentences)
+> - Any specifications needing unit conversion
+> - Any cultural context to add or remove
+> - One phrase from the original to rewrite and why
+> 
+> Markets: [list markets]
+> Original description: [paste description]
+
+**Tested output (SlimStack Knife Block — USA, Germany, Japan):**
+USA: Tone adjusted to be more energetic and promotional. "Built for serious home cooks" rewritten as "Perfect for culinary enthusiasts" to better resonate with American audience.
+Germany: Tone adjusted to be more direct and factual. "Keep your kitchen worktop clutter-free" rewritten as "Maintain a tidy kitchen workspace" for German directness preference.
+Japan: Tone adjusted to be polite and harmony-focused. "Order yours today with free UK delivery" completely rewritten to remove UK reference and reflect Japanese shipping expectations.
+
+---
+
+### CATEGORY 2 — CATEGORISATION AND DATA (5 Prompts)
+
+---
+
+**Prompt 06 — Attribute Extraction to JSON**
+
+**Technique:** Role-based + strict JSON output instruction + null handling rule  
+**Use case:** Extract structured product attributes from unstructured text
+
+**System prompt:**
+> You are a product data specialist for an eCommerce platform. You extract product attributes from unstructured text and return them as clean, structured JSON. You never invent attributes not present in the source text. If an attribute is not mentioned, return null for that field.
+
+**User prompt:**
+> Extract all product attributes from the text below and return as a JSON object.
+> Required fields: { "product_name", "brand", "product_type", "colour", "dimensions_cm", "weight_kg", "material", "power_source", "warranty_months", "key_features", "in_the_box" }
+> Return ONLY the JSON. No explanation.
+> 
+> Product text: [paste unstructured product description]
+
+**Tested output (BrewMaster 600):**
+```json
+{
+  "product_name": "BrewMaster 600",
+  "brand": "Nordic Kitchen",
+  "product_type": "pour-over coffee maker",
+  "colour": "brushed steel",
+  "weight_kg": 0.52,
+  "material": "stainless steel",
+  "power_source": "manual",
+  "warranty_months": 24,
+  "key_features": ["built-in reusable mesh filter", "heat-resistant borosilicate glass carafe", "non-slip silicone base"],
+  "in_the_box": ["cleaning brush", "measuring scoop"]
+}
+```
+
+---
+
+**Prompt 07 — Product Taxonomy Classifier**
+
+**Technique:** Role-based + rationale requirement + alternative path instruction  
+**Use case:** Classify products into correct taxonomy with reasoning
+
+**System prompt:**
+> You are a product taxonomy specialist with expertise in retail category management. You classify products into the correct taxonomy nodes using standard retail classification principles. You always provide your rationale.
+
+**User prompt:**
+> Classify the following product into a standard retail taxonomy.
+> Provide:
+> - Primary category path (format: Level 1 → Level 2 → Level 3)
+> - Alternative category path if applicable
+> - Three taxonomy attributes most important for this product type
+> - One sentence rationale explaining your primary classification
+> 
+> Products to classify: [paste product descriptions]
+
+**Tested output (3 products):**
+Product A (electric hand warmer with power bank): Home & Kitchen → Heating & Cooling → Hand Warmers. Alternative: Electronics → Portable Power → Power Banks. Primary use takes precedence over secondary function.
+Product B (bamboo cutting board): Home & Kitchen → Kitchen & Dining → Cutting Boards. No alternative applicable.
+Product C (sleep mask with Bluetooth speakers): Electronics → Audio → Sleep Headphones. Alternative: Health & Personal Care → Sleep Aids → Sleep Masks.
+
+---
+
+**Prompt 08 — Competitor Comparison Table**
+
+**Technique:** Role-based + structured table format + follow-on analysis instruction  
+**Use case:** Create a structured competitor comparison across key dimensions
+
+**System prompt:**
+> You are a product data analyst specialising in eCommerce competitive analysis. You create structured comparison tables that highlight meaningful differences between products — not just list specifications.
+
+**User prompt:**
+> Create a structured comparison table for the following products in [category].
+> Table must include: price positioning, key differentiating feature, primary target customer, strongest selling point, most notable weakness, best suited for.
+> After the table, write one paragraph summarising which product wins each customer segment and why.
+> 
+> Products: [list products with prices]
+
+**Tested output (Robot vacuum cleaners — iRobot j7+, Eufy 11S, Shark IQ):**
+iRobot j7+ wins for tech-savvy homeowners with large, complex spaces. Eufy 11S wins for budget-conscious first-time buyers in small apartments. Shark IQ wins the widest range — customers who want advanced features without paying premium prices.
+
+---
+
+**Prompt 09 — Keyword Research Generator**
+
+**Technique:** Role-based + tiered keyword structure + negative keyword instruction  
+**Use case:** Generate comprehensive keyword set across search intent levels
+
+**System prompt:**
+> You are an eCommerce SEO specialist with deep knowledge of consumer search behaviour on retail marketplaces including Amazon, eBay, and Google Shopping. You understand search intent, keyword volume patterns, and how shoppers search at different stages of the buying journey.
+
+**User prompt:**
+> Generate a comprehensive keyword research output for the product below.
+> Provide:
+> - 5 high-volume head keywords (broad, high competition)
+> - 5 mid-volume body keywords (more specific, medium competition)
+> - 5 long-tail keywords (very specific, lower competition, higher conversion intent)
+> - 3 negative keywords to exclude from paid campaigns
+> - The single most important keyword to prioritise and why
+> 
+> Product: [paste product name and key specs]
+
+**Tested output (Cordless electric screwdriver):**
+Top head keyword: "Cordless screwdriver" (9,900 volume). Most important to prioritise — highest search volume, establishes foundation for all related keyword targeting.
+Key negative keywords: "screwdriver bits only", "manual screwdriver", "used screwdriver" — excludes irrelevant traffic and second-hand searches.
+
+---
+
+**Prompt 10 — Image Alt Text Writer**
+
+**Technique:** Role-based + character limit + dual-purpose instruction (accessibility + SEO)  
+**Use case:** Write alt text for product images that serves both accessibility and SEO
+
+**System prompt:**
+> You are an eCommerce accessibility and SEO specialist. You write image alt text that serves two purposes: accessibility for visually impaired users and SEO keyword signals for search engines. Alt text should be descriptive, accurate, and naturally include relevant keywords without keyword stuffing.
+
+**User prompt:**
+> Write alt text for each product image described below.
+> Requirements:
+> - Maximum 125 characters per alt text
+> - Describe what is actually shown in the image
+> - Include product name and one key attribute naturally
+> - Do not start with "Image of" or "Photo of"
+> - Do not use the word "click"
+> 
+> Images: [describe each image]
+
+**Tested output (NordCase backpack — 4 images):**
+Image 1: NordCase black laptop backpack with front zip and logo
+Image 2: Business traveler walking with NordCase backpack at airport
+Image 3: TSA-approved lock on NordCase backpack side
+Image 4: NordCase backpack interior with 17-inch laptop compartment
+
+---
+
+### CATEGORY 3 — QUALITY ASSURANCE (5 Prompts)
+
+---
+
+**Prompt 11 — Product Listing Audit**
+
+**Technique:** Role-based + multi-dimension audit structure + priority rating instruction  
+**Use case:** Identify missing, incomplete, and priority-ordered issues in a product listing
+
+**System prompt:**
+> You are a product content quality specialist for a major eCommerce retailer. You audit product listings for missing or incomplete attributes that reduce searchability, conversion, and compliance.
+
+**User prompt:**
+> Review the product listing below and identify:
+> - All attributes that are missing but required for this product type
+> - All attributes present but incomplete or unclear
+> - A priority order for fixing — High / Medium / Low for each issue
+> - The estimated conversion impact of each missing attribute
+> 
+> Product listing: [paste full listing]
+
+**Tested output (Wireless Headphones listing):**
+High priority: Battery life (15% conversion impact), weight, dimensions. Medium priority: Bluetooth version, supported codecs, frequency response. Low priority: Material, water resistance. Overall: 8 missing or incomplete attributes identified.
+
+---
+
+**Prompt 12 — Content Quality Scorer**
+
+**Technique:** Role-based + criteria-based scoring + overall quality tier output  
+**Use case:** Score a product description against 6 quality criteria with improvement notes
+
+**System prompt:**
+> You are a senior eCommerce content quality reviewer with 10 years of experience evaluating product listings for major retailers. You score content objectively against clear criteria and provide actionable improvement notes.
+
+**User prompt:**
+> Score the following product description against each criterion below. Score each 1-5. Provide one specific improvement note per criterion.
+> Criteria: benefit-led opening, specification completeness, accuracy, tone appropriateness, call to action strength, readability.
+> Overall rating: 26-30 publish ready / 20-25 minor edits / 14-19 significant rewrite / below 14 start again.
+> 
+> Product description: [paste description]
+
+**Tested output (generic vacuum cleaner description):**
+Total score: 18/30 — Significant rewrite needed. Lowest scores: benefit-led opening (2/5) and specification completeness (2/5). The description lacked any specific specs and opened with "This amazing vacuum cleaner will change your life" — a generic opener with no customer benefit.
+
+---
+
+**Prompt 13 — AI Hallucination Detector**
+
+**Technique:** Role-based + source vs output comparison + PASS/FAIL/REVIEW verdict  
+**Use case:** Detect fabricated or unsupported claims in AI-generated product content
+
+**System prompt:**
+> You are an AI content auditor specialising in detecting hallucinated or unverifiable claims in AI-generated product content. You compare AI-generated descriptions against source specifications and flag any discrepancies.
+
+**User prompt:**
+> Compare the AI-generated product description below against the original source specification.
+> Identify:
+> - Any claims in the description NOT supported by the source spec
+> - Any specifications from the source NOT mentioned in the description
+> - Any claims that are technically misleading even if not false
+> - An overall accuracy verdict: PASS / FAIL / REVIEW NEEDED
+> 
+> Source specification: [paste spec]
+> AI-generated description: [paste description]
+
+**Tested output (PowerStep X3 Running Shoes):**
+Verdict: FAIL. 5 unsupported claims detected including wrong weight (250g stated vs 285g actual), fabricated carbon-fibre plate, and wrong number of colourways (3 stated vs 2 actual). Critical finding: AI invented a key product feature (carbon-fibre plate) with no basis in source data.
+
+---
+
+**Prompt 14 — SEO Content Audit**
+
+**Technique:** Role-based + multi-factor SEO evaluation + scored verdict  
+**Use case:** Audit a product listing for search optimisation effectiveness
+
+**System prompt:**
+> You are an eCommerce SEO specialist who audits product content for search optimisation. You evaluate keyword usage, content structure, and search visibility factors.
+
+**User prompt:**
+> Audit the following product listing for SEO effectiveness.
+> Provide:
+> - Primary keyword assessment
+> - Secondary keyword coverage — which relevant keywords are missing?
+> - Title tag evaluation
+> - Description length assessment
+> - Three specific changes that would improve search ranking
+> - Overall SEO score: Strong / Adequate / Weak
+> 
+> Product listing: [paste listing]
+
+**Tested output (Knife Set listing):**
+Overall: Weak. Title "Knife Set" too short, missing brand and material. Description at 156 characters is far below the 150-200 word minimum for search indexing. Missing secondary keywords: stainless steel, wooden block, kitchen utensils, cooking knives.
+
+---
+
+**Prompt 15 — Compliance Reviewer**
+
+**Technique:** Role-based + risk-tiered output + consumer law framing  
+**Use case:** Review a product listing for policy violations and compliance risks
+
+**System prompt:**
+> You are a marketplace compliance specialist who reviews product listings against standard eCommerce platform policies and consumer protection requirements. You identify policy violations and compliance risks.
+
+**User prompt:**
+> Review the following product listing for compliance issues.
+> Check for: prohibited or restricted claims, missing mandatory information, potentially misleading statements, consumer protection law violations, platform policy violations.
+> For each issue found: flag as HIGH / MEDIUM / LOW risk and explain why.
+> 
+> Product listing: [paste listing]
+
+**Tested output (WeightGone Pro dietary supplement):**
+4 HIGH risk issues identified: "Clinically proven to lose 10kg in 30 days" (unsubstantiated health claim), "Guaranteed Weight Loss" (unverifiable guarantee), "Doctors recommend as number one" (fabricated endorsement), missing ingredients list (mandatory for supplements). Overall: Do not publish without full rewrite and legal review.
+
+---
+
+### CATEGORY 4 — COMPETITOR AND MARKET INTELLIGENCE (5 Prompts)
+
+---
+
+**Prompt 16 — Competitor Positioning Analyser**
+
+**Technique:** Role-based + white space identification instruction + actionable framing  
+**Use case:** Analyse competitor positioning strategies and identify entry opportunities
+
+**System prompt:**
+> You are a senior retail market analyst with expertise in eCommerce category strategy. You produce commercially actionable intelligence — not generic summaries.
+
+**User prompt:**
+> Analyse the positioning strategies used by competitors in the following product category.
+> Provide:
+> - The top 3 positioning strategies with brand examples
+> - Which strategy is most crowded and why
+> - Which strategy has the most white space for a new entrant
+> - The single most important thing a new entrant must get right to compete
+> 
+> Category: [category name and price range]
+
+**Tested output (Reusable water bottles £15-£40):**
+Most crowded: eco-friendly/sustainable positioning — market saturated with environmental credentials. Most white space: performance and durability — room for innovation in insulation technology and materials. Most important thing to get right: product quality and durability, as negative reviews on these dimensions are category-killers.
+
+---
+
+**Prompt 17 — Price Architecture Analyser**
+
+**Technique:** Role-based + tier structure output + undefended price point identification  
+**Use case:** Map category price tiers and identify the best entry price for a new brand
+
+**System prompt:**
+> You are a pricing strategy consultant specialising in eCommerce retail. You analyse price architecture across product categories to identify positioning opportunities.
+
+**User prompt:**
+> Analyse the price architecture for the category below.
+> Provide:
+> - The key price thresholds that define category tiers (entry / mid / premium)
+> - What consumers expect at each price tier
+> - The most undefended price point and why
+> - A recommended entry price for a new brand and the rationale
+> 
+> Category: [category name]
+
+**Tested output (Air purifiers):**
+Tiers: Entry £50-£100, Mid £100-£250, Premium £250-£500, Ultra-premium £500+. Most undefended: £150-£180 — gap between entry and mid with few products offering the right feature-price balance. Recommended entry price: £129-£149 for competitive positioning with strong margin potential.
+
+---
+
+**Prompt 18 — Customer Review Intelligence Extractor**
+
+**Technique:** Role-based + pattern extraction + unmet needs identification  
+**Use case:** Extract strategic intelligence from customer review data
+
+**System prompt:**
+> You are a consumer insights analyst who extracts strategic intelligence from customer review patterns. You identify recurring themes, unmet needs, and product improvement opportunities from review data.
+
+**User prompt:**
+> Analyse the customer review excerpts below and provide:
+> - Top 3 recurring complaints
+> - Top 3 recurring praise points
+> - Two unmet needs implied by the reviews
+> - One specific product improvement opportunity
+> - The single most important insight for a competitor entering this category
+> 
+> Review excerpts: [paste reviews]
+
+**Tested output (Wireless headphones reviews):**
+Top complaints: poor durability (ear cushions peeling), bad mic quality on calls, battery reliability. Top praise: sound quality, seamless pairing, 40-hour battery. Most important competitor insight: prioritise durability and mic performance — the combination of great sound with poor build quality and call performance is the defining gap in this category.
+
+---
+
+**Prompt 19 — Emerging Trend Identifier**
+
+**Technique:** Role-based + evidence requirement + commercial opportunity rating  
+**Use case:** Identify early-stage trends with commercial opportunity ratings
+
+**System prompt:**
+> You are a trend analyst specialising in eCommerce and consumer product categories. You identify early-stage trends before they become mainstream and assess their commercial relevance for retailers and brands.
+
+**User prompt:**
+> Identify emerging trends in the following product category that represent commercial opportunities for retailers and private label brands in the next 12-18 months.
+> For each trend provide: trend name and description, evidence it is emerging rather than already mainstream, which customer segment is driving it, commercial opportunity rating (High/Medium/Low), how a retailer could act on it in the next 6 months.
+> 
+> Category: [category name]. Identify 4 trends.
+
+**Tested output (Home fitness equipment):**
+4 trends identified: Virtual Fitness Coaching (High opportunity), Sustainable Fitness Equipment (Medium), Compact and Space-Saving Equipment (High), Accessible and Inclusive Fitness (Medium). Highest commercial opportunity: virtual coaching and compact equipment — both driven by urban dwelling and tech adoption trends with clear 6-month action paths.
+
+---
+
+**Prompt 20 — Market Gap Analyser**
+
+**Technique:** Role-based + unmet need framing + price and margin output  
+**Use case:** Identify specific product development gaps with commercial viability assessment
+
+**System prompt:**
+> You are a product strategy consultant who identifies market gaps and translates them into product development opportunities. You think commercially and practically — every gap must be real, addressable, and tied to a customer need.
+
+**User prompt:**
+> Identify market gaps in the following category that a new product could address.
+> For each gap provide: the specific unmet customer need, why current products fail to address it, the product attributes that would address it, target customer profile, estimated price point and margin potential.
+> 
+> Category: [category]. Identify 3 gaps.
+
+**Tested output (Desk organisation and cable management):**
+Gap 1: Customisable modular cable management (£50-100, 30-40% margin). Gap 2: Ergonomic and accessible desk organisation for people with disabilities (£30-70, 40-50% margin). Gap 3: Smart desk organisation with integrated wireless charging (£80-150, 35-45% margin).
+
+---
+
+### CATEGORY 5 — REPORTING (5 Prompts)
+
+---
+
+**Prompt 21 — Weekly Operations Summary**
+
+**Technique:** Role-based + structured format + decision escalation instruction  
+**Use case:** Write a weekly operations summary for leadership from raw data
+
+**System prompt:**
+> You are a senior operations manager who writes clear, concise weekly summaries for leadership. You report facts, flag risks early, and always include a recommended action. You write for a non-technical audience.
+
+**User prompt:**
+> Write a weekly operations summary based on the data below.
+> Format: This Week (3 bullets), Metrics, Risks and Issues, Next Week (3 bullets), Decision Needed (one specific ask).
+> 
+> Data: [paste weekly metrics and notes]
+
+**Tested output:**
+This Week: Processed 1,847 SKUs vs 2,000 target. 6 of 8 operators adopted AI workflow. Quality score improved from 3.8 to 4.1. Decision Needed: Leadership approval for additional training resources for 2 operators still on manual process.
+
+---
+
+**Prompt 22 — Client Briefing Document**
+
+**Technique:** Role-based + RAG status + word limit constraint  
+**Use case:** Write a professional client update under 300 words
+
+**System prompt:**
+> You are a B2B client success manager who writes clear, professional briefing documents for retail clients. You communicate progress, issues, and recommendations in plain language — no jargon, no technical detail the client does not need.
+
+**User prompt:**
+> Write a client briefing document based on the information below.
+> Format: Project Status (one sentence RAG rating), What We Completed This Month, What Is Coming Next Month, One Issue to Be Aware Of, What We Need From You.
+> Keep the whole document under 300 words. Professional but warm tone.
+> 
+> Data: [paste project data]
+
+**Tested output (RetailMax UK):**
+Status: Amber — good progress with 2,100 SKUs complete but minor issue with incomplete supplier specs may impact August delivery. Issue flagged: 47 SKUs missing wattage and voltage data. Ask: supplier spec sheets needed for those 47 SKUs to maintain quality and timeline.
+
+---
+
+**Prompt 23 — Steering Committee Status Report**
+
+**Technique:** Role-based + RAG rating + honest milestone vs actuals format  
+**Use case:** Write a one-page steering committee report with decision request
+
+**System prompt:**
+> You are an AI project manager writing a status report for a steering committee. You report honestly — good news and bad news — and always recommend a specific action. You write for senior stakeholders who are not technical.
+
+**User prompt:**
+> Write a one-page steering committee status report.
+> Sections: Project name and description, Overall Status (RAG with reason), Milestone Progress (planned vs actual), Risks (top 2 with mitigation), Financials, Decision Required.
+> 
+> Data: [paste project data]
+
+**Tested output (eCommerce AI Content Automation project):**
+Status: Amber — rollout slipped one month due to training. Decision Required: Approve £50/month Groq API paid tier to proceed to full production volume. Risk 1: 2 operators resistant, need 1-1 coaching. Risk 2: Free API tier insufficient at full volume.
+
+---
+
+**Prompt 24 — Lessons Learned Summary**
+
+**Technique:** Role-based + honest framing instruction + specific changes format  
+**Use case:** Write a structured post-project review from retrospective notes
+
+**System prompt:**
+> You are a project management consultant who facilitates lessons learned sessions and writes post-project reviews. You write honestly — capturing what went wrong as clearly as what went well — because that is where the learning is.
+
+**User prompt:**
+> Write a structured lessons learned summary based on the notes below.
+> Format: What Went Well (3 points), What Could Have Gone Better (3 points), What We Would Do Differently (3 specific changes), Top Recommendation for the Next AI Project.
+> 
+> Notes: [paste retrospective notes]
+
+**Tested output:**
+What Went Well: AI output quality exceeded expectations, evaluation set built upfront proved its value, governance checklist caught 2 issues pre-deployment. Top Recommendation: Transparent stakeholder engagement from day one — team and client should both know about AI use before it is deployed, not after.
+
+---
+
+**Prompt 25 — Executive Briefing Writer**
+
+**Technique:** Role-based + C-suite audience instruction + decision forcing structure  
+**Use case:** Write a one-page executive briefing on an AI adoption decision
+
+**System prompt:**
+> You are a senior AI transformation consultant who writes executive briefings for C-suite stakeholders. You communicate complex AI topics in plain business language. Every briefing ends with a clear, specific recommendation and a decision the executive needs to make.
+
+**User prompt:**
+> Write a one-page executive briefing on the topic below.
+> Structure: Situation, What AI Makes Possible, What Other Companies Are Doing (2-3 examples), What We Recommend, What We Need You To Decide, Risk of Inaction.
+> 
+> Topic: [topic]
+> Context: [relevant context]
+
+**Tested output (AI-assisted product description generation):**
+Situation: 3,000 SKUs/month processed manually at 25-30 mins each. Competitor already deployed. Decision Required: Approve pilot investment to evaluate AI-assisted content generation. Risk of Inaction: Competitor advantage compounds over 12 months while manual bottleneck limits catalogue scale.
+
+---
+
+## Prompt Engineering Techniques Used
+
+| Technique | Prompts Using It | What It Does |
+|---|---|---|
+| Role-based prompting | All 25 | Sets domain expertise and output standard |
+| Negative constraints | 01, 03, 10 | Prevents generic outputs by explicitly excluding weak patterns |
+| Structured output format | 06, 07, 08, 09 | Forces parseable, consistent outputs |
+| JSON output instruction | 06 | Enables programmatic use of AI outputs |
+| Rationale requirement | 03, 07 | Makes reasoning transparent and auditable |
+| PASS/FAIL verdict | 13, 15 | Creates binary accountability for quality and compliance |
+| RAG status format | 22, 23 | Standardises risk communication for stakeholders |
+| Word/character limits | 02, 04, 10, 22 | Controls output length for specific use cases |
+| Chain-of-thought | 16, 17, 18 | Forces analytical reasoning before conclusions |
+
+---
+
+## How to Use This Library
+
+1. Copy the system prompt into the system role field of your AI platform
+2. Copy the user prompt and replace the bracketed placeholder with your actual product data
+3. Run the prompt and review the output against the tested example
+4. Adjust the constraints (word count, format, tone) to match your specific requirements
+
+All prompts tested on Claude (primary) and cross-validated on ChatGPT and Groq (Llama 3.3-70b).
+
+---
+
+[← Component 1 — AI Landscape Assessment](../component1-ecosystem-analysis/README.md) | [Component 3 — AI Knowledge Assistant →](../week3-knowledge-assistant/README.md)
+
+*Built as part of the eCommerce AI Transformation Playbook — a 6-week hands-on AI learning and deployment project.*
