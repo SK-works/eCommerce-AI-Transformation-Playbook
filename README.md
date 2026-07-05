@@ -27,7 +27,20 @@ A structured capability assessment of five major AI platforms tested against rea
 
 ---
 
-### Component 2 — AI Use Case Prioritisation Framework
+### Component 2 — eCommerce Prompt Library
+**Status:** Complete
+
+**What this is:** A library of 25 production-tested prompts across 5 eCommerce content operations categories — product content, categorisation and data, quality assurance, competitor and market intelligence, and reporting. Every prompt includes a defined system role, structured output instructions, and a real tested output.
+
+**What was built:** 25 prompts covering the full eCommerce content workflow — from product description generation and attribute extraction to compliance review, competitive positioning analysis, and executive briefing writing. Each prompt is documented with the technique used (role-based, JSON output, chain-of-thought, PASS/FAIL verdict, RAG status format) so it can be replicated and adapted by any content team.
+
+**Key finding:** Prompt structure determines output quality more than platform choice for standard tasks. A role-based prompt with explicit output constraints and negative rules consistently outperforms an open-ended question on the same task — regardless of which AI platform is used. The JSON extraction prompt (Prompt 06) is the highest-value prompt in the library: it returns machine-readable structured data that can feed directly into a catalogue system, removing a manual data entry step entirely.
+
+**Techniques demonstrated:** Role-based prompting, negative constraints, structured output forcing, JSON-only output, chain-of-thought reasoning, PASS/FAIL compliance verdicts, RAG status reporting formats, character and word count constraints, rationale-required instructions.
+
+**Tools:** Claude (primary testing), ChatGPT, Groq API (Llama 3.3 70B)
+
+[Read the full prompt library →] (https://github.com/your-username/ecommerce-ai-transformation-playbook/blob/main/component2-prompt-library/README.md)](https://github.com/SK-works/eCommerce-AI-Transformation-Playbook/blob/main/eCommerce_Prompt_Library)
 
 ---
 
