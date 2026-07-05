@@ -1,12 +1,9 @@
 # eCommerce AI Transformation Playbook
 
 A complete AI transformation programme for eCommerce content operations —
-covering strategic assessment, use case prioritisation, knowledge architecture,
-workflow automation, agentic AI strategy, and governance framework. Each
-strategic deliverable is accompanied by a deployed proof of concept.
+covering strategic assessment, use case prioritisation, knowledge architecture, workflow automation, agentic AI strategy, and governance framework. Each strategic deliverable is accompanied by a deployed proof of concept.
 
-Built to demonstrate end-to-end transformation leadership capability, from
-board-level investment rationale to working production systems.
+Built to demonstrate end-to-end transformation leadership capability, from board-level investment rationale to working production systems.
 
 ---
 
@@ -91,7 +88,7 @@ an 8-10x throughput improvement per operator.
 publishing. The workflow automates the drafting step only — human 
 judgment on quality, accuracy, and brand alignment is retained.
 
-[Read the full documentation →] https://app.notion.com/p/eCommerce-Product-Brief-Process-Automation-Workflow-3921a1c9f95480e1bed4e5fb838d881e?source=copy_link
+[Read the full documentation →](https://app.notion.com/p/eCommerce-Product-Brief-Process-Automation-Workflow-3921a1c9f95480e1bed4e5fb838d881e?source=copy_link)
 
 ---
 
@@ -126,7 +123,7 @@ review step, total time per brief drops from 3 hours to
 Analyst review covers factual accuracy, client relevance, 
 and strategic appropriateness before delivery.
 
-[Read the full documentation →] https://app.notion.com/p/eCommerce-Competitor-Intelligence-Agent-3941a1c9f9548074a129d2de767d1dea?source=copy_link
+[Read the full documentation →](https://app.notion.com/p/eCommerce-Competitor-Intelligence-Agent-3941a1c9f9548074a129d2de767d1dea?source=copy_link)
 
 ---
 
@@ -157,7 +154,7 @@ GDPR obligations for B2B eCommerce operations.
 - Incident Response — 5-step procedure with time targets
 - Pre-Deployment Checklist — 25 checks across 5 categories
 
-[Read the full framework →] https://app.notion.com/p/AI-Governance-Framework-eCommerce-AI-Deployment-3941a1c9f95480aebab5d8beb4b6c6b3?source=copy_link
+[Read the full framework →](https://app.notion.com/p/AI-Governance-Framework-eCommerce-AI-Deployment-3941a1c9f95480aebab5d8beb4b6c6b3?source=copy_link)
 
 ---
 
