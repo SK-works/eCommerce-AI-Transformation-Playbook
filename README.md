@@ -13,7 +13,7 @@ board-level investment rationale to working production systems.
 ## Components
 
 ### Component 1 — AI Landscape & Opportunity Assessment
-**Status:** ✅ Complete
+**Status:** Complete
 
 A structured capability assessment of five major AI platforms tested against real eCommerce content operations tasks. Designed to answer the operational question every transformation lead must answer before recommending any AI platform: which tools can actually be trusted in a production content workflow?
 
@@ -32,7 +32,7 @@ A structured capability assessment of five major AI platforms tested against rea
 ---
 
 ### Component 3 — AI Knowledge Assistant (RAG Chatbot)
-**Status:** ✅ Complete
+**Status:** Complete
 
 A live, publicly accessible RAG (Retrieval-Augmented Generation) chatbot that answers eCommerce content operations questions grounded in a structured 6-document knowledge base. Anyone can open the link, ask a question, and get a grounded, accurate answer drawn directly from the knowledge base.
 
@@ -53,9 +53,7 @@ Suggested questions to try:
 
 ---
 
-### Component 4 — Workflow Automation Business Case & Implementation
-## Component 4 — Process Automation Workflow
-
+### Component 4 — Product Brief Process Automation Workflow
 **Status:** Complete
 
 **What this is:** A working automation workflow that takes a product 
@@ -82,8 +80,38 @@ judgment on quality, accuracy, and brand alignment is retained.
 
 ---
 
-### Component 5 — AI Agent Strategy & Design
-**Status:** 🔄 In Progress
+### Component 5 — AI Competitor Intelligence Agent
+**Status:** Complete
+
+**What this is:** A four-step autonomous AI agent that researches 
+a product category and generates a complete competitive 
+intelligence brief — identifying competitor strategies, market 
+gaps, and strategic opportunities — without any manual steps 
+between input and output.
+
+**How it works:** Four specialist AI agents run in sequence — 
+Market Researcher → Gap Analyst → Opportunity Strategist → 
+Intelligence Writer. Each step feeds its output into the next, 
+exactly as a human analyst team would work.
+
+**Tested across:** 2 product categories — Wireless Earbuds 
+(£30–£80) and Robot Vacuum Cleaners (£150–£300). 100% success 
+rate. Different competitors, gaps, and opportunities correctly 
+identified for each category automatically.
+
+**Key performance finding:** Manual competitive intelligence 
+takes 2–3 hours per category. The agent completes the same 
+research and writing in 68 seconds. With a 10–15 minute analyst 
+review step, total time per brief drops from 3 hours to 
+15 minutes — a 10–12x improvement.
+
+**Tools:** Google Colab, Groq API (Llama 3.3 70B), Python
+
+**Human oversight:** Agent output is a research draft. 
+Analyst review covers factual accuracy, client relevance, 
+and strategic appropriateness before delivery.
+
+[Read the full documentation →] https://app.notion.com/p/eCommerce-Competitor-Intelligence-Agent-3941a1c9f9548074a129d2de767d1dea?source=copy_link
 
 ---
 
