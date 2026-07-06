@@ -165,3 +165,5 @@ GDPR obligations for B2B eCommerce operations.
 **Project goal:** Demonstrate end-to-end AI transformation leadership capability — the ability to assess, prioritise, design, build, govern, and communicate AI initiatives in a real eCommerce operations context.
 
 All tools used are free tier. All proof of concepts are deployed and publicly accessible.
+
+© Sravanthi Konduru, 2026. All rights reserved. Please do not reproduce or republish without attribution.
